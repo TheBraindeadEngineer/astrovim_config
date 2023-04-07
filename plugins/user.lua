@@ -29,6 +29,11 @@ return {
     end,
     event = "VeryLazy",
   },
+  {
+    "ggandor/leap.nvim",
+    config = function() require("leap").add_default_mappings() end,
+    event = "User AstroFile",
+  },
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
